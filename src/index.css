@@ -26,7 +26,6 @@ a:hover {
 
 body {
   margin: 0;
-  /*display: flex;*/
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
@@ -36,28 +35,9 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-  text-align: center;
-}
-
-button {
-  border-radius: 8px;
-  /*border: 1px solid transparent;*/
-  border: 1px solid;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight:500;
-  font-family: inherit;
-  /*background-color: #1a1a1a;*/
-  background: #f29553;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  text-align: left;
+  padding-left: 50px;
+  
 }
 
 @media (prefers-color-scheme: light) {
@@ -69,36 +49,60 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    /*background-color: #f9f9f9;*/
+    
     background: #f29553;
     
   }
+}
+
+form{
+  padding-left: 1000px;
 }
 
 .container {
   margin: 0 auto;
   max-width: 500px;
   width: 100%;
-  padding: 20px;
+  padding-top: 7px;
   border: 1px solid #ccc;
   
 }
 
 .form-label{
   font-weight: bold;
+  padding-left: 18px;
+  
 }
 
 h2, p{
   text-align: center;
+  
 }
 
-#btn{
+.radio-container {
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 1px;
+  
+}
+
+.radio-container label {
+  flex: 1;
+  
+}
+
+#btn, #clearButton{
 
   font-weight: bold;
   background: orange;
+  margin-right:  15px;
+  margin-left: 25px;
+  color: black;
 }
 
-#btn:hover{
+#btn:hover, #clearButton:hover{
 
   font-weight: bold;
   background: green;
